@@ -18,13 +18,17 @@ button {
     color: black;
 }
 
-/* HEADER */
+/* HEADER */ 
 header {
-    height: calc(100vh - 9.375rem);
+    height: 85vh;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     background-image: url(../assets/logo.jpg);
+}
+
+header nav span {
+    color: #EE6055;
 }
 
 #header-content {
@@ -32,6 +36,7 @@ header {
     margin: 9.375rem auto;
     text-align: center;
     color: black;
+    font-weight: bold;
     font-weight: bold;
 }
 
@@ -49,7 +54,7 @@ ul {
 }
 
 li {
-    margin: 0 1rem;
+    margin: 0 0 0 1rem;
 }
 
 /* MENU */
@@ -59,9 +64,45 @@ nav {
     justify-content: space-between;
     margin: auto 2rem;
     color: black;
+    font-weight: bold;
+    padding: 0;
 }
 
 nav p {
     font-weight: bold;
 }
 
+/* MEDIA */
+@media (max-width: 670px) {
+    header {
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../assets/logo-cel.jpg);
+    }
+
+    ul #navigation {
+        margin: 0;
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+        padding-top: 0.75;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.5rem 0.75rem 0 0.75rem;
+        justify-content:space-between
+    }
+
+    #home {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    #navigation{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
