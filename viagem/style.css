@@ -4,105 +4,151 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
+.title {
+    font: 700 1.875rem "Poppins", sans-serif;
+    color: #1A1423;
 }
 
-/* BUTTON */
-button {
-    font-weight: bold;
-    padding: 0.625rem 1rem;
-    background: #FCB741;
-    border-radius: 0.5rem;
-    border: 0;
-    color: black;
+.text {
+    font: 500 1.125rem 'DM Sans', sans-serif;
+    color: #34312D;
 }
 
 /* HEADER */ 
 header {
-    height: 85vh;
+    height: calc(100vh - 9.375rem);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(../assets/logo.jpg);
+    background-image: url(../assets/Photos/logo.jpg);
 }
 
-header nav span {
+#home {
+    font: 700 1.25rem "Poppins", sans-serif;
+    padding: 0.75rem 0 0 1.75rem;
+}
+
+#home span {
     color: #EE6055;
 }
 
 #header-content {
     max-width: 25rem;
-    margin: 9.375rem auto;
+    margin: 8rem auto;
     text-align: center;
-    color: black;
+    color: #34312D;
     font-weight: bold;
     font-weight: bold;
 }
 
-#header-content h1 {
-    margin-bottom: 1rem;
+#header-content h2 {
+    color: #1A1423;
+    margin-bottom: 0.7rem;
 }
 
 #header-content p {
-    margin: 1rem;
+    margin-bottom: 0.7rem;
 }
 
-ul {
-    list-style: none;
-    display: flex;
+/* BUTTON */
+button {
+    padding: 0.625rem 1rem;
+    background: #EE6055;
+    border-radius: 0.5rem;
+    border: 0;
+    font: 500 1rem 'DM Sans', sans-serif;
 }
 
-li {
-    margin: 0 0 0 1rem;
+button a {
+    text-decoration: none;
+    color: rgb(247, 240, 240);
 }
 
-/* MENU */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: auto 2rem;
-    color: black;
-    font-weight: bold;
-    padding: 0;
+button:hover {
+    background: #D64550;
 }
 
-nav p {
-    font-weight: bold;
+/* CONTATO */
+main {
+    height: 9.375rem;
+    background-color: #f57970;
+}
+
+#contact-logo {
+    padding: 1.5rem 0 0 1.75rem;
+    font: 700 1.5rem Poppins, sans-serif;
+}
+
+#contact-logo span {
+    color: hsl(0 0% 98%);
+}
+
+section p {
+    padding: 0.75rem 0 0 1.75rem;
+}
+
+#icons a{
+    margin: 0 0.75rem 0 0;
+    text-align: right;
+    font-size: 1.25rem;
+    float: right;
+    text-decoration: none;
+    color: hsl(0 0% 98%);
+}
+
+section div a:hover {
+    transition: 0.3s;
+    transform: translateY(-0.5rem);
 }
 
 /* MEDIA */
-@media (max-width: 670px) {
+@media (max-width: 767px) {
+    .title {
+        font: 700 1.7rem "Poppins", sans-serif;
+        color: #1A1423;
+    }
+    
+    .text {
+        font: 500 1rem 'DM Sans', sans-serif;
+        color: #34312D;
+    }
+
     header {
-        height: 90vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-image: url(../assets/logo-cel.jpg);
-    }
-
-    ul #navigation {
-        margin: 0;
-    }
-
-    #menu {
-        display: flex;
-        align-items: center;
-        padding-top: 0.75;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0.5rem 0.75rem 0 0.75rem;
-        justify-content:space-between
+        height: calc(100vh - 9.375rem);
+        background-image: url(../assets/Photos/logo-cel.jpg);
     }
 
     #home {
-        font-size: 1rem;
-        font-weight: bold;
+        font-size: 1.31rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding: 0.5rem 0 0 0.75rem;
+        justify-content:space-between
     }
     
-    #navigation{
-        font-size: 1rem;
-        font-weight: bold;
+    .logo {
+        font: 700 1.31rem Poppins, sans-serif;
+    }
+
+    main {
+        height: 9.375rem;
+        background-color: #f57970;
+    }
+
+    #contact-logo {
+        padding: 1rem 0 0 0.75rem;
+    }
+    
+    section p {
+        padding-left: 0.75rem;
+    }
+
+    #icons a{
+        padding-right: 0.3rem;
+        text-align: right;
+        font-size: 1.25rem;
+        float: right;
+        text-decoration: none;
+        color: hsl(0 0% 98%);
     }
 }
